@@ -12,7 +12,7 @@ import java.util.List;
 public class ResDTO {
     private Integer resultCode;
     private String resultDescription;
-    private List<UserDTO> data;
+    private UserDTO data;
 
     public ResDTO(Integer resultCode, String resultDescription) {
         this.resultCode = resultCode;

@@ -15,21 +15,21 @@ public class UserController {
 
     @GetMapping(value = "/{nic}")
     public ResDTO getUser(@PathVariable String nic){
-        return null;
+        return userService.getUser(nic);
     }
 
     @PostMapping
     public ResDTO saveUser(@RequestBody UserDTO userDTO){
-        return null;
+        return userService.saveUser(userDTO);
     }
 
     @PutMapping(value = "/{nic}")
     public ResDTO updateUser(@RequestBody UserDTO userDTO, @PathVariable String nic){
-        return null;
+        return userService.updateUser(userDTO, nic);
     }
 
     @DeleteMapping(value = "/{nic}")
     public ResDTO deleteCustomer(@PathVariable String nic){
-        return null;
+        return userService.deleteUser(nic);
     }
 }
